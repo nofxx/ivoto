@@ -1,0 +1,449 @@
+a
+  color: #d30
+
+  &:link, &:visited
+    color: #07b
+    text-decoration: none
+
+  &:hover, &:active
+    color: #d30
+
+
+h1, h2, h3
+  color: #444
+
+
+body
+  color: #333
+  background: #EBEBEB
+  font: normal 12px/1.5em "Lucida Grande", "Helvetica Neue", Arial, sans-serif
+
+
+hr
+  background: #aaa
+
+
+p
+  font-size: 12px
+  line-height: 20px
+
+
+f.checkbox
+  vertical-align: middle
+
+
+#header h1
+  font-size: 20px
+  padding: 7px 0px 9px 0px
+  margin: 0px 0px 5px 0px
+
+
+.hightlight
+  background-color: #ffc
+
+
+.small
+  font-size: 11px
+
+
+.gray
+  font-size: 0.8em
+  color: #999
+
+
+#header
+  background: #232C30
+
+  h1 a
+    &:link, &:active, &:hover, &:visited
+      color: #eaeaea
+
+
+#main
+  background: #EBEBEB
+  width: 73%
+
+  .block
+    -moz-background-clip: border
+    -moz-background-inline-policy: continuous
+    -moz-background-origin: padding
+    background: #FFFFFF none repeat scroll 0 0
+    border: 1px solid #B4AC99
+    margin-bottom: 24px
+    margin-left: 5px
+    margin-right: none
+    padding: 3px
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2)
+
+
+    .content
+      border-left: 1px solid #ddd
+      border-top: 1px solid #ddd
+      border-bottom: 1px solid #ccc
+      border-right: 1px solid #ccc
+      background: #efefef
+
+    h2.title
+      margin: 10px 0 5px 0
+      background-color: none
+      padding: 5px 5px 15px 15px
+      margin-bottom: 15px
+      font-size: 18px
+      color: #456
+      border-bottom: 1px solid #eee
+
+
+.main_container
+  padding: 10px
+
+
+
+#footer
+  background-color: #ddd
+  padding: 10px
+  color: #888
+  .block
+    font-size: 11px
+    background-color: #ddd
+    padding: 0 10px
+    text-align: right
+
+
+#sidebar
+  .notice
+    background-color: #ffc
+    padding: 0 10px
+    border-bottom: 1px solid #ddd
+    border-right: 1px solid #ddd
+    border-top: 1px solid #fff
+    border-left: 1px solid #fff
+
+    h2
+      font-size: 16px
+      margin: 5px 0
+      border-bottom: 1px solid #456
+
+    p
+      font-size: 12px
+
+  .block
+    padding-bottom: 0
+
+    .content
+      padding: 0 10px
+
+  h3
+    background: #efefef
+    border-bottom: 1px solid #bbb
+    border-right: none
+    border-left: none
+    border-top: none
+    padding: 5px 10px
+    color: #333
+    font-weight: bold
+
+  ul
+    li a
+      &:link, &:visited
+        font-size: 12px
+
+      &:hover, &:active
+        background: none
+        color: #444
+        font-size: 12px
+        text-decoration: underline
+
+    &.navigation li
+      &.last a
+        border-bottom: none
+
+      a
+        &:link, &:visited
+          padding: 5px 10px
+          color: #6a6a6a
+          text-decoration: none
+
+        &:hover
+          text-decoration: underline
+
+  .block .sidebar-block h4
+    border-bottom: 1px dotted #aaa
+
+
+#main-navigation ul li
+  background: #456
+  border-top: 1px solid #5C738A
+  color: #eee
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+
+  &:hover
+    border-top-color: #7593B0
+    background-color: #576C82 !important
+    color: #fff
+
+  &.active
+    border-top: 1px solid #fff
+    background-color: #eee !important
+    color: #333
+
+  a
+    &:link, &:visited, &:hover, &:active
+      text-decoration: none
+      color: #FFF
+
+
+.secondary-navigation ul li a
+  &:link, &:visited, &:hover, &:active
+    text-decoration: none
+    color: #FFF
+
+
+#user-navigation ul li a
+  &:link, &:visited, &:hover, &:active
+    text-decoration: none
+    color: #FFF
+  &:link, &:visited
+    color: #CDE
+    border-bottom: 1px dotted #345
+  &:hover
+    color: #fff
+    border-bottom: 1px dotted #CDE
+    text-decoration: none
+  &.red
+    color: #ff2222
+
+
+#main-navigation ul li
+  a
+    font-size: 12px
+    padding: 3px 10px
+
+  &.active a
+    &:link, &:visited, &:hover, &:active
+      color: #364b69
+
+
+.secondary-navigation
+  background: #eaeaea
+  border-bottom: 0px
+  ul li
+    background: #456
+    border-top: 1px solid #5C738A
+    color: #eee
+    margin-right: 5px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    a
+      padding: 3px 10px
+    &.active
+      border-top: 1px solid #ddd
+      border-left: 1px solid #ddd
+      border-right: 1px solid #ccc
+      border-bottom: 1px solid #fff
+      margin-bottom: -1px
+      background-color: #fff !important
+      color: #333
+      &:hover
+        background: #fff !important
+        border-top: 1px solid #ccc
+        border-right: 1px solid #ccc
+      a
+        color: #333
+    &:hover
+      border-top-color: #7593B0
+      background-color: #576C82 !important
+      color: #fff
+
+
+.pagination
+  span
+    &.current
+      background: #576C82
+      color: #FFF
+      border: 1px solid #7593B0
+      -moz-border-radius: 5px
+    &.disabled
+      background: #eee
+      color: #aaa
+      border: 1px solid #ddd
+      -moz-border-radius: 5px
+  a
+    color: #364B69
+    border: 1px solid #ddd
+    -moz-border-radius: 5px
+    font-size: 11px
+    &:hover
+      color: #444
+      background: #eaeaea
+      border: 1px solid #576C82
+
+
+.table
+  th
+    background: #ddd
+    color: #444
+    font-weight: bold
+    padding: 5px
+    a.toggle
+      display: block
+      width: 12px
+      height: 12px
+      background: transparent url('images/tick.png') center no-repeat
+      text-indent: -9999px
+      -moz-outline: none
+    &.first
+      width: 30px
+      text-align: center
+  td
+    border-bottom: 1px solid #AAA
+
+
+.form
+  input.text, textarea.textarea
+    border: 1px solid #ddd
+    padding: 5px
+    width: 99%
+    font-size: 1.5em
+
+
+  .navform
+    padding: 10px
+    background-color: #eee
+    font-size: 14px
+    border-bottom: 1px solid #ddd
+    border-right: 1px solid #ddd
+    border-top: 1px solid #eee
+    border-left: 1px solid #eee
+    text-align: right
+
+    input
+      font-size: 14px
+
+input, textarea
+  border: 1px solid #ddd
+  border-top: 2px solid #ccc
+  border-left: 2px solid #ccc
+  background-color: white
+  color: #444
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  font-size: 1.5em
+  width: 99%
+
+.button
+  width: 30%
+  border-bottom: 2px solid #bbb
+  border-top: none
+  border-left: none
+  border-right: 2px solid #bbb
+  height: 30px
+  background-color: #fff
+  color: #888
+  font-weight: bold
+
+.border
+  -moz-background-clip:border
+  -moz-background-inline-policy:continuous
+  -moz-background-origin:padding
+  background:#FFFFFF none repeat scroll 0 0
+  border:1px solid #B4AC99
+  margin-bottom:24px
+  margin-left:36px
+  margin-right:36px
+  padding:3px
+  text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2)
+
+
+
+
+
+.description
+  color: #aaa
+  font-family: Georgia, serif
+
+
+.flash
+  .message
+    -moz-border-radius: 3px
+    -webkit-border-radius: 3px
+    text-align: center
+    margin: 0 auto 5px
+    width: 80%
+
+    p
+      margin: 8px
+
+  .error
+    border: 1px solid #fbb
+    background-color: #fdd
+
+  .warning
+    border: 1px solid #fffaaa
+    background-color: #ffffcc
+
+  .notice
+    border: 1px solid #ddf
+    background-color: #eef
+
+
+ul.list li
+  border-bottom-color: #F0F0EE
+
+  .item .avatar
+    border-color: #F0F0EE
+    margin: 3px 10px 0 0
+
+  .left
+    padding: 5px 5px
+
+
+#box .block
+  background: #FFF
+  border: 1px solid #ddd
+  border-radius: 10px
+
+  h2
+    background: #576C82
+    color: #FFF
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+
+.pub_item
+  padding: 15px
+  border-bottom: 1px solid #ddd
+  background-color: #fff
+
+
+
+.command
+  text-align: right
+  margin: 5px
+
+
+ol
+  font-size: 1.2em
+  list-style-image: none
+  list-style-position: outside
+  list-style-type: none
+
+ol li
+  position: relative
+
+ol span
+  display: block
+
+.body
+  margin-bottom: 8px
+
+.latest
+  -moz-border-radius-topright: 8px
+  -webkit-border-radius: 8px
+  -moz-border-radius-topleft: 8px
+  -webkit-border-radius: 8px
+  
+
+.highlight
+  font-size: 1.44em
+  margin-bottom: 10px
