@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @election.name %>
+</p>
+
+<p>
+  <b>Occur at:</b>
+  <%=h @election.occur_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_election_path(@election) %> |
+<%= link_to 'Back', elections_path %>

@@ -1,0 +1,16 @@
+<h1>Editing vote</h1>
+
+<% form_for(@vote) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :kind %><br />
+    <%= f.text_field :kind %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @vote %> |
+<%= link_to 'Back', votes_path %>

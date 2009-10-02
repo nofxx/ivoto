@@ -1,0 +1,16 @@
+<h1>Editing rate</h1>
+
+<% form_for(@rate) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @rate %> |
+<%= link_to 'Back', rates_path %>

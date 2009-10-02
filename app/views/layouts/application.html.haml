@@ -1,0 +1,44 @@
+!!! Transitional
+%head
+  %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }/
+  %title= "Zem - #{controller.controller_name.upcase}"
+  //= bundle :name => 'defaults' do
+  = stylesheet_link_tag 'base', 'style', :cache => "cache/all"
+  = javascript_include_tag 'jquery'
+  = yield :head
+  %link{ :href => "/images/favicon.png", :rel => "shortcut icon" }/
+%body
+  #container
+    #header
+      %h1= link_to "Zem", "/"
+      #user-navigation
+        %ul
+          - if cu?
+            %li= link_to "PubSub", "/pubs"
+            %li= link_to "Groups", "/groups"
+            %li= link_to "Users", "/users"
+            %li= link_to "Accounts", "/accounts" if admin?
+            %li= link_to current_user.email, "/options"
+            %li= link_to "Logout", "/logout", :class => "red"
+          - else
+            %li= link_to "Login", "/login", :class => "red"
+        .clear
+      //#main-navigation
+      //  %ul
+      //    %li.first
+      //      %a{ :href => "#block-text" }  Main Page
+      //    %li.active
+      //      %a{ :href => "#block-text" }  Active
+      //    %li
+      //      %a{ :href => "#block-login" } Login
+      //    %li
+      //      %a{ :href => "#block-signup" } Signup
+      //  .clear
+    #wrapper
+      #sidebar= yield :sidebar
+      #main= yield
+    .clear
+    #footer
+      .block
+        %p
+          Copyright &copy; 2009 Fireho.
