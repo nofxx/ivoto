@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  template: template_postgis
+  encoding: unicode
+  database: ivoto_development
+  username: postgres
+  password:
+
+test:
+  adapter: postgresql
+  template: template_postgis
+  encoding: unicode
+  database: ivoto_test
+  username: postgres
+  password:
+
+production:
+  adapter: postgresql
+  template: template_postgis
+  encoding: unicode
+  database: ivoto_test
+  username: postgres
+  password:
+  # host: 1.1.1.1
+  # port: 11

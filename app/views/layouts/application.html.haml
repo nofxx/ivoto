@@ -1,7 +1,7 @@
 !!! Transitional
 %head
   %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }/
-  %title= "Zem - #{controller.controller_name.upcase}"
+  %title= "iVoto - #{controller.controller_name.upcase}"
   //= bundle :name => 'defaults' do
   = stylesheet_link_tag 'base', 'style', :cache => "cache/all"
   = javascript_include_tag 'jquery'
@@ -10,7 +10,7 @@
 %body
   #container
     #header
-      %h1= link_to "Zem", "/"
+      %h1= link_to "iVoto", "/"
       #user-navigation
         %ul
           - if cu?
