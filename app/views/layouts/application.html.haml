@@ -4,27 +4,36 @@
     %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }/
     %title= "iVoto - #{controller.controller_name.upcase}"
     //= bundle :name => 'defaults' do
-    = stylesheet_link_tag 'base', 'style', :cache => "cache/all"
+    = stylesheet_link_tag 'reset', 'global', :cache => "cache/all"
     = javascript_include_tag 'jquery'
     = yield :head
     %link{ :href => "/images/favicon.png", :rel => "shortcut icon" }/
   %body
-    #container
+    #wrapper
       #header
-        %h1= link_to "iVoto", "/"
-        #user-navigation
-          %ul
-            - if cu?
-              %li= link_to "PubSub", "/pubs"
-              %li= link_to "Groups", "/groups"
-              %li= link_to "Users", "/users"
-              %li= link_to "Accounts", "/accounts" if admin?
-              %li= link_to current_user.email, "/options"
-              %li= link_to "Logout", "/logout", :class => "red"
-            - else
-              %li= link_to "Login", "/login", :class => "red"
-          .clear
-      #wrapper
+        .logo
+          %a{ :href => "/" }
+            %span Vote Certo!
+        .login_module
+          %p
+            %strong
+              %a{ :href => "/sign_up" }
+                Create your Hi, I'm page
+            or
+            %strong
+              %a{ :href => "/sign_in" }
+                Login
+        #benefits
+          .left_copy_box
+            %h1
+              Hi, I'm is like your nametag on the internet.
+            %h2
+              Featuring your latest content from your favorite networks, your Hi, I'm page tells everyone who you are and what you're about all on one page.
+            %ul.buttons
+              %li
+                %a.big_btn.create_profile{ :href => "/sign_up" }
+                  Create your Hi, I'm page
+      #content
         #sidebar= yield :sidebar
         #main= yield
       .clear
