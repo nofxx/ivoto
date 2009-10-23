@@ -1,0 +1,847 @@
+.clearfix
+  display: inline-block
+
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+
+* html .clearfix
+  height: 1%
+
+
+.clearfix
+  display: block
+
+
+h1
+  font-size: 2.4em
+  font-weight: 700
+  margin-bottom: 5px
+
+
+blockquote
+  font-size: 1.4em
+  margin-bottom: 20px
+  width: 495px
+
+
+p
+  font-size: 1.4em
+  margin-bottom: 10px
+
+
+a
+  color: #EE2D24
+  text-decoration: underline
+
+  &:hover
+    color: #B7211A
+    text-decoration: none
+
+
+label
+  color: #3F3F3E
+  font-size: 1.5em
+  margin-bottom: 5px
+
+  span
+    color: #666666
+    font-size: 0.8em
+
+
+textarea
+  background: url("../images/backgrounds/bg_textarea.gif") no-repeat
+  border: 0 none
+  color: #999999
+  font-size: 1.8em
+  height: 180px
+  padding: 10px
+  width: 480px
+  float: left
+
+
+#flash
+
+.note, .error, .success
+  margin-bottom: 10px
+  margin-top: 10px
+  padding: 20px 20px 20px 45px
+
+
+.note
+  border: 1px solid #FDD526
+  background: #FEF09B url("../images/icons/note.png") 20px 20px no-repeat
+
+
+.error
+  border: 1px solid #FD2F2F
+  background: #FFB4B7 url("../images/icons/exclamation.png") 20px 20px no-repeat
+
+
+.success
+  border: 1px solid #21FD31
+  background: #B1FEB0 url("../images/icons/accept.png") 20px 20px no-repeat
+
+
+.w_760
+  width: 760px
+
+
+.w_500
+  width: 505px
+
+
+.wait_error
+  margin: 0 auto
+  padding: 30px 0
+  width: 610px
+
+
+ul.buttons
+  margin-top: 10px
+  overflow: hidden
+
+  li
+    float: left
+    line-height: 35px
+    margin-right: 5px
+    margin-top: 10px
+
+
+.btn2
+  display: block
+  height: 34px
+  text-indent: -9000px
+  width: 140px
+
+
+.btn
+  display: block
+  height: 35px
+  text-indent: -9000px
+  width: 142px
+
+
+.btn_sml
+  display: block
+  height: 34px
+  text-indent: -9000px
+  width: 102px
+
+
+.notifyme
+  background: url("../images/buttons/btn_notify_me.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+.next
+  background: url("../images/buttons/btn_next.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+.log_me
+  background: url("../images/buttons/btn_log_me_in.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+.done
+  background: url("../images/buttons/btn_done.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+.save
+  background: url("../images/buttons/btn_save.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+.twitter_post
+  background: url("../images/buttons/btn_twitter_post.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+.facebook_post
+  background: url("../images/buttons/btn_facebook_post.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+html
+  background: #F2F2EA
+
+
+body
+  color: #333333
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0 auto
+  width: 800px
+
+
+#header
+  padding: 15px 0
+  overflow: hidden
+
+
+#header_divider
+  border-top: 1px solid #DBDBDB
+  border-bottom: 1px solid #FFF
+  clear: both
+  height: 0
+  display: block
+  width: 800px
+
+
+body#profile #header_divider
+  border: none
+
+
+#header
+  .logo
+    float: left
+
+    a
+      background: url("../images/misc/logo.gif") no-repeat
+      display: block
+      height: 36px
+      width: 112px
+
+      span
+        display: none
+
+  .login_module
+    float: right
+
+    p
+      font-size: 1.2em
+
+
+#content
+  padding: 15px 0
+  overflow: hidden
+
+  .col_left
+    float: left
+
+  .col_right
+    float: right
+    width: 210px
+
+  div
+    &.data
+      overflow: hidden
+      padding: 10px 0
+      position: relative
+      width: 800px
+
+    &.highlight
+      background-color: #F6F6F6
+      padding: 10px
+      width: 500px
+
+    &.data
+      &.last
+        background: none
+
+      label
+        display: block
+        font-weight: 700
+
+        span
+          float: none
+          display: inline
+          font-weight: 400
+
+      div
+        &.ctn_input
+          background: url("../images/backgrounds/bg_input.gif") top left no-repeat
+          float: left
+          margin: 6px 0 0 0
+          padding-left: 5px
+
+        &.ctn_input_networks
+          background: url("../images/backgrounds/bg_input.gif") top left no-repeat
+          float: left
+          margin: 6px 30px 0 0
+          padding-left: 5px
+
+        input
+          background: transparent url("../images/backgrounds/bg_input.gif") no-repeat scroll right top
+          border: 0 none
+          color: #999999
+          font-size: 1.8em
+          height: 22px
+          padding: 14px 10px 14px 5px
+          width: 480px
+
+          &.done_button
+            background: url("../images/buttons/btn_done.jpg") left top no-repeat
+            padding: 0
+            width: 142px
+            height: 35px
+            border: none
+
+          &.log_in_button:hover
+            background-position: left bottom
+
+          &.twitter_post_button
+            background: url("../images/buttons/btn_twitter_post.jpg") left top no-repeat
+            padding: 0
+            width: 141px
+            height: 34px
+            border: none
+
+            &:hover
+              background-position: left bottom
+
+          &.next_button
+            background: url("../images/buttons/btn_next.jpg") left top no-repeat
+            padding: 0
+            width: 142px
+            height: 35px
+            border: none
+
+            &:hover
+              background-position: left bottom
+
+          &.save_button
+            background: url("../images/buttons/btn_save.jpg") right top no-repeat
+            padding: 0
+            width: 142px
+            height: 35px
+            border: none
+
+            &:hover
+              background-position: left bottom
+
+          &.log_in_button
+            background: url("../images/buttons/btn_log_me_in.jpg") left top no-repeat
+            padding: 0
+            width: 142px
+            height: 35px
+            border: none
+
+          &.done_button:hover
+            background-position: left bottom
+
+          &.username
+            width: 330px
+
+      select
+        color: #999999
+        float: left
+        font-size: 1.5em
+        margin-right: 20px
+        margin-top: 6px
+        padding: 13px
+        width: 130px
+
+
+.remove_network
+  float: left
+  font-size: 1.4em
+  margin-left: 30px
+  margin-top: 22px
+
+
+.remove_highlight
+  float: right
+  font-size: 1.4em
+  margin-right: 9em
+  margin-top: 66px
+
+
+.network_item
+  float: left
+
+
+.highlight_item
+  background: url("../images/misc/divider.gif") bottom left no-repeat
+  margin: 10px 0
+
+
+#content div.data
+  small
+    background: url("../images/backgrounds/bg_arrow.gif") no-repeat
+    color: #847013
+    float: right
+    font-size: 1.3em
+    height: 36px
+    padding: 12px 21px 10px 40px
+    width: 205px
+
+  ul.buttons
+    float: right
+    font-size: 1.2em
+
+
+#checking_availability
+  img
+    vertical-align: bottom
+
+  .text
+    color: green
+    font-size: 12px
+
+
+.gravatar_container
+  float: left
+  margin-right: 30px
+
+
+.formError
+  color: red
+  font-size: 12px
+
+
+.formError_textarea
+  color: red
+  font-size: 12px
+  margin-top: -10px
+
+
+.formError_avatar
+  color: red
+  font-size: 12px
+  margin-top: 10px
+
+
+#content div.data div.ctn_input_error_field
+  background: url("../images/backgrounds/bg_input.gif") top left no-repeat
+  float: left
+  margin: 6px 30px 0 0
+  padding-left: 5px
+
+  input
+    border: 1px solid red
+    float: left
+    height: 18px
+    margin: 0 -5px 10px
+
+
+.tetextarea_error_field
+  background: transparent url(../images/backgrounds/bg_textarea.gif) no-repeat scroll 0 0
+  border: 1px solid red
+  color: #999999
+  float: left
+  font-size: 1.8em
+  height: 180px
+  padding: 10px
+  width: 480px
+
+
+.small
+  font-size: 0.5em
+
+
+#content
+  ul#profile_menu
+    background: url("../images/backgrounds/profile_menu.jpg") no-repeat
+    height: 53px
+    margin-top: 20px
+    width: 800px
+
+    li
+      float: left
+
+      a
+        display: block
+        color: #666
+        font-size: 1.2em
+        font-weight: bold
+        margin-top: 6px
+        text-decoration: none
+        padding: 16px 20px 16px 20px
+
+        &:hover
+          background-color: #FFF
+          border-left: 1px solid #DFDFD8
+          border-right: 1px solid #DFDFD8
+          border-bottom: 1px solid #FFF
+          color: #EE2D24
+          padding: 16px 19px 16px 19px
+
+      &.selected a
+        background-color: #FFF
+        border-left: 1px solid #DFDFD8
+        border-right: 1px solid #DFDFD8
+        border-bottom: 1px solid #FFF
+        color: #EE2D24
+        padding: 16px 19px 16px 19px
+
+  #profile_container
+    background-color: #FFF
+    border: 1px solid #DFDFD8
+    padding: 20px
+    width: 758px
+
+    #sidebar
+      float: left
+      width: 200px
+
+      p.description
+        font-size: 1.3em
+        line-height: 20px
+
+    #my_networks
+      float: left
+      margin-left: 20px
+      width: 530px
+
+      ul.networklist
+        width: 100%
+
+    ul
+      &.networklist li
+        background-color: #F6F6F6
+        font-size: 1.2em
+        font-weight: bold
+        margin-bottom: 5px
+        padding: 10px
+
+        .feedback
+          float: left
+          margin-left: 10px
+          margin-top: 15px
+
+          img
+            margin-right: 5px
+
+      &.buttons li
+        padding: 0
+
+      &.networklist li
+        div
+          &.edit_box, &.network_box
+            font-size: 0.8em
+            margin-left: 25px
+            margin-bottom: 20px
+            margin-top: 10px
+
+          &.edit_box .ctn_input input
+            height: 26px
+            width: 320px
+            padding: 10px 0 0 5px
+
+        span
+          top: 2px
+          position: relative
+
+          &.links
+            float: right
+            font-size: 0.8em
+            text-align: right
+
+          &.handle
+            font-weight: normal
+            font-size: 0.8em
+
+        .network_icon
+          float: left
+          margin-right: 10px
+
+
+body#profile #content #profile_container
+  background-color: #FFF
+  border: 1px solid #DFDFD8
+  border-top: none
+  padding: 20px
+  width: 758px
+
+
+#content
+  #profile_container_2
+    background-color: #FFFFFF
+    border: 1px solid #DFDFD8
+    padding-left: 40px
+    padding-top: 40px
+
+
+  #profile_container
+    table
+      td
+        padding: 10px
+        text-align: left
+
+      th
+        background-color: #e8e8e8
+        font-weight: bold
+        padding: 10px
+        text-align: left
+
+    ul#tags
+      color: #666
+      font-size: 1.2em
+      font-weight: bold
+      margin-bottom: 10px
+
+      li
+        display: inline
+        margin-right: 10px
+
+  .odd
+    background-color: #f9f9f9
+
+
+.save
+  background: url("../images/buttons/btn_save.jpg") left top no-repeat
+
+  &:active
+    background-position: left bottom
+
+
+.save_sml
+  background: url("../images/buttons/btn_save_small.jpg") left top no-repeat
+
+  &:active
+    background-position: left bottom
+
+
+body#profile
+  #header
+    height: 20px
+    border: 0 none
+
+  #content, #footer
+    border: 0 none
+
+
+#content
+  #profile_header
+    background: url("../images/backgrounds/profile_menu.jpg") no-repeat
+    height: 53px
+    width: 800px
+
+    h1
+      font-size: 2.4em
+      padding: 13px 0 0 15px
+
+      span.small
+        font-size: 0.5em
+
+  #profile_container
+    h2
+      font-size: 2em
+      font-weight: bold
+      margin-bottom: 10px
+
+    h3
+      font-size: 1.5em
+      font-weight: bold
+      margin-bottom: 10px
+
+  #profile_container_2 h3
+    font-size: 1.5em
+    font-weight: bold
+    margin-bottom: 5px
+
+  #profile_container
+    ul#networks
+      margin-top: 10px
+
+    div.data small
+      position: relative
+      right: 50px
+
+    ul
+      &.ul_terms
+        font-size: 1.4em
+        line-height: 20px
+        list-style-type: disc
+        padding-left: 35px
+
+      &#networks li
+        float: left
+        line-height: 30px
+        width: 100px
+
+        img
+          float: left
+          margin-right: 5px
+          margin-top: 5px
+
+        a
+          font-size: 1.2em
+          font-weight: bold
+
+    a.remove_account
+      font-size: 14px
+
+  #highlight_bar
+    background: url("../images/backgrounds/highlights.jpg") no-repeat
+    display: block
+    height: 60px
+    margin: 20px 0
+    overflow: hidden
+    width: 800px
+
+    p
+      font-size: 1.3em
+      padding-left: 150px
+      padding-top: 22px
+
+  .feed
+    float: left
+    margin-bottom: 40px
+    margin-right: 36px
+
+  .multimedia_feed
+    clear: both
+    height: 120px
+    margin-bottom: 40px
+
+  .feed
+    ul.network_feed
+      font-size: 1.2em
+      width: 215px
+
+    a.network_name
+      color: #000000
+
+  .multimedia_feed
+    ul.network_feed
+      font-size: 1.2em
+      width: 100%
+
+    a.network_name
+      color: #000000
+
+    ul.network_feed li
+      float: left
+      margin-right: 5px
+
+  .feed ul.network_feed li
+    border-bottom: 1px solid #DFDFD8
+    padding: 5px 0
+
+    a
+      color: #333
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+
+.clear
+  clear: both
+
+
+#content #search_bar
+  background: url("../images/backgrounds/search_bar.jpg") no-repeat
+  display: block
+  height: 60px
+  overflow: hidden
+  width: 800px
+
+  form
+    float: right
+    margin-top: 2px
+    padding: 10px
+    width: 500px
+
+  div.ctn_input input
+    color: #999999
+    float: left
+    font-family: Georgia
+    font-size: 1.4em
+    font-style: italic
+    height: 18px
+    margin-right: 10px
+    padding: 8px 10px 8px 5px
+    width: 320px
+
+
+.fetch_results
+  background: url("../images/buttons/fetch_results.jpg") left top no-repeat
+
+  &:hover
+    background-position: left bottom
+
+
+#content ul#search_results
+  margin-top: 30px
+
+  li
+    float: left
+    height: 96px
+    margin: 0 0 20px 20px
+    width: 380px
+
+    h2
+      font-size: 1.8em
+      font-weight: bold
+      margin-bottom: 10px
+      padding-left: 130px
+
+    p
+      padding-left: 130px
+
+
+.boxes_terms
+  background-color: #EAE9E4
+  border: 2px solid #F9F9F7
+  font-size: 12px
+  height: 15px
+  padding: 10px
+  width: 478px
+
+  .check_box
+    margin-right: 5px
+
+
+#footer
+  padding: 15px 0
+
+  p
+    color: #999999
+    font-size: 1.1em
+
+  #right
+    float: right
+
+    ul
+      list-style-type: none
+
+      li
+        display: inline
+        margin-left: 10px
+
+
+img.left, .left
+  float: left
+  margin-right: 30px
+
+
+img.right
+  float: right
+  margin-left: 30px
+
+
+#error_page h1
+  font-size: 2.8em
+  padding-top: 50px
+  margin-bottom: 10px
+
+
+.admin_tag
+  background-color: #990000
+  font-weight: bold
+  color: #FFF
+  font-size: 0.7em
+  padding-left: 5px
+  padding-right: 5px
