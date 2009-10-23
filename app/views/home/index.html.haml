@@ -1,1 +1,164 @@
-iVoto
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
+    %title
+      Hi, I'm - your nametag on the internet
+    %link{ :href => "/favicon.ico", :rel => "SHORTCUT ICON" }
+    /
+      CSS
+    %link{ :href => "/stylesheets/reset.css?1256273376", :rel => "stylesheet", :media => "screen", :type => "text/css" }
+    %link{ :href => "/stylesheets/landing.css?1256273376", :rel => "stylesheet", :media => "screen", :type => "text/css" }
+  %body
+    /
+      WRAPPER START
+    #wrapper
+      /
+        HEADER START
+      #header
+        .logo
+          %a{ :href => "/" }
+            %span
+              Hi, Im
+        .login_module
+          %p
+            %strong
+              %a{ :href => "/sign_up" }
+                Create your Hi, I'm page
+            or
+            %strong
+              %a{ :href => "/sign_in" }
+                Login
+        #benefits
+          .left_copy_box
+            %h1
+              Hi, I'm is like your nametag on the internet.
+            %h2
+              Featuring your latest content from your favorite networks, your Hi, I'm page tells everyone who you are and what you're about all on one page.
+            %ul.buttons
+              %li
+                %a.big_btn.create_profile{ :href => "/sign_up" }
+                  Create your Hi, I'm page
+      /
+        CONTENT START
+      #content
+        #search_bar
+          %form#search{ :method => "get", :action => "/search" }
+            .ctn_input
+              %input#search{ :name => "search", :type => "text" }
+            %ul.buttons
+              %li
+                %a.btn.fetch_results{ :href => "#", :onClick => "$('search').submit();" }
+                  Fetch Results
+        %ul#features
+          %li
+            #left
+              %img.left{ :src => "/images/misc/guess_who.gif" }
+            %h3
+              Why Hi, I'm?
+            %p
+              Chances are you've got a bunch of profiles all over the internet--Facebook, Twitter, LinkedIn, FriendFeed...Plus you might have a blog or a YouTube channel and some pictures on Flickr.  Put all those sites together, and that's YOU on the internet.
+            %p
+              With Hi, I'm you can share all of your latest content from all of your networks on one page.
+            %ul#feature_points
+              %li
+                Add your content from your favorite networks.
+              %li
+                Your Hi, I'm page updates whenever you post on any of your networks.
+              %li
+                Highlight links, tweets, videos or posts that are most important to you.
+              %li
+                Share your page at http://hi.im/yourname
+            %br.clear
+          %li
+            %img.right{ :src => "/images/misc/hi_face.gif" }
+            %h3
+              Who's on Hi, I'm?
+            %p
+              Here are a few of our favorite Hi, I'm Pages. Recognize anybody?
+            %ul#user_list
+              %li
+                %a{ :href => "http://hi.im/jonathan" }
+                  Jonathan Tarud
+              %li
+                %a{ :href => "http://hi.im/max" }
+                  Andres Pena
+              %li
+                %a{ :href => "http://hi.im/ryankuder" }
+                  Ryan Kuder
+              %li
+                %a{ :href => "http://hi.im/mario" }
+                  Mario Tatis
+              %li
+                %a{ :href => "http://hi.im/jose" }
+                  Jose Gomez
+              %li
+                %a{ :href => "http://hi.im/god" }
+                  Alvaro Insignares
+              %li
+                %a{ :href => "http://hi.im/ace" }
+                  Alvaro Araujo
+              %li
+                %a{ :href => "http://hi.im/elioncho" }
+                  Elias Orozco
+            %br.clear
+        #sidebar
+          %a{ :href => "http://twitter.com/hiimapp", :target => "_blank" }
+            %img{ :src => "/images/buttons/twitter_follow.jpg?1256273376", :border => "0", :alt => "Twitter_follow" }
+          %ul#features
+            %li
+              %h4
+                People have tagged themselves with...
+      /
+        FOOTER START
+      #footer
+        #right
+          %ul
+            /
+              <li><a href="/about">About</a></li>
+            %li
+              %a{ :href => "http://blog.hi.im" }
+                Blog
+            %li
+              %a{ :href => "mailto:help@hi.im" }
+                Support
+            %li
+              %a{ :href => "/privacy" }
+                Privacy Policy
+            %li
+              %a{ :href => "/terms" }
+                Terms of Service
+        %p
+          \&copy;2009 Hi, I'm. All Rights Reserved. Made by
+          %a{ :href => "http://koombea.com", :target => "_blank" }
+            Koombea
+          for
+          %a{ :href => "http://railsrumble.com" }
+            Rails Rumble
+      %script{ :src => "/javascripts/prototype.js?1256273376", :type => "text/javascript" }
+      %script{ :src => "/javascripts/effects.js?1256273376", :type => "text/javascript" }
+      %script{ :src => "/javascripts/dragdrop.js?1256273376", :type => "text/javascript" }
+      %script{ :src => "/javascripts/controls.js?1256273376", :type => "text/javascript" }
+      %script{ :src => "/javascripts/application.js?1256273376", :type => "text/javascript" }
+      %script{ :src => "http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php", :type => "text/javascript" }
+      %script{ :type => "text/javascript" }
+        \//
+        :cdata
+          Element.observe(window,'load', function() {
+          FB_RequireFeatures(["XFBML","Api"], function() {
+          FB.Facebook.init('240e73e8fab5375a4527ce7533ffb335','/xd_receiver.html', {});
+          
+          
+          
+          });
+          });
+          
+          \//
+      %script{ :type => "text/javascript" }
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      %script{ :type => "text/javascript" }
+        try {
+        var pageTracker = _gat._getTracker("UA-2668141-11");
+        pageTracker._trackPageview();
+        } catch(err) {}
