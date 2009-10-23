@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user_session, :current_user
   filter_parameter_logging :password, :password_confirmation
 
-  before_filter :require_user
+  # before_filter :require_user
   before_filter :set_time_zone
   before_filter :set_locale
 

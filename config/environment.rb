@@ -13,7 +13,7 @@ Rails::Initializer.run do |config|
   config.gem 'nofxx-money',     :lib => 'money'
   config.gem 'nofxx-symbolize', :lib => 'symbolize'
   config.gem 'nofxx-georuby',   :lib => 'geo_ruby', :version => '>=1.6.2'
-  config.gem 'nofxx-postgis_adapter', :lib => 'postgis_adapter', :version => '>=0.7.0', :source => 'http://gems.github.com'
+  # config.gem 'nofxx-postgis_adapter', :lib => 'postgis_adapter', :version => '>=0.7.0', :source => 'http://gems.github.com'
   config.gem 'binarylogic-authlogic', :lib => 'authlogic'
   config.gem 'mislav-will_paginate',  :lib => 'will_paginate'
   config.gem 'thoughtbot-paperclip' , :lib => 'paperclip'
